@@ -14,7 +14,7 @@ const Footer = () => {
     </div>
     <div className="mb-4 md:mb-0">
       <h3 className="text-lg lg:text-2xl font-semibold mb-2">Pages</h3>
-      <ul className="text-center">
+      <ul className="lg:text-center">
       <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/food">Food</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>

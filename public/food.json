@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "food_name": "Gourmet Burger",
+        "food_image": "https://i.ibb.co/DK2CdmP/goumrat.jpg",
+        "food_category": "Fast Food",
+        "price": "$9.99",
+        "made_by": "Chef John Doe",
+        "food_origin": "United States",
+        "description": "A delicious gourmet burger made with premium beef, topped with fresh vegetables, and served in a brioche bun."
+    },
+    {
+        "id": 2,
+        "food_name": "Mango Tango Smoothie",
+        "food_image": "https://i.ibb.co/XbnHjWL/mango-tango.jpg",
+        "food_category": "Beverages",
+        "price": "$5.49",
+        "made_by": "Mixologist Jane Smith",
+        "food_origin": "Tropical Regions",
+        "description": "A refreshing smoothie blending ripe mangoes, yogurt, and a hint of citrus for a tropical flavor explosion."
+    },
+    {
+        "id": 3,
+        "food_name": "Spicy Ramen Bowl",
+        "food_image": "https://i.ibb.co/LPmWrxd/spicy-ramen.jpg",
+        "food_category": "Asian Cuisine",
+        "price": "$12.95",
+        "made_by": "Chef Sakura Yamamoto",
+        "food_origin": "Japan",
+        "description": "A flavorful and spicy ramen bowl featuring hand-pulled noodles, rich broth, and a medley of fresh vegetables. A true taste of Japanese culinary artistry."
+    },
+    {
+        "id": 4,
+        "food_name": "Caprese Salad",
+        "food_image": "https://i.ibb.co/0r9MGB7/Caprese-Salad-main-1.webp",
+        "food_category": "Salads",
+        "price": "$8.75",
+        "made_by": "Chef Maria Rossi",
+        "food_origin": "Italy",
+        "description": "A classic Caprese salad with ripe tomatoes, fresh mozzarella, basil leaves, and a drizzle of balsamic glaze. Simple, yet a burst of Mediterranean flavors."
+    },
+    {
+        "id": 5,
+        "food_name": "Cheesy Pizza Supreme",
+        "food_image": "https://i.ibb.co/yQrd2sM/pizza-superme.jpg",
+        "food_category": "Italian Cuisine",
+        "price": "$14.99",
+        "made_by": "Pizzaiolo Marco",
+        "food_origin": "Italy",
+        "description": "Indulge in the goodness of a cheesy pizza supreme, loaded with premium toppings, a blend of mozzarella and Parmesan cheeses, and a perfectly baked crust."
+    },
+    {
+        "id": 6,
+        "food_name": "Chocolate Indulgence Cake",
+        "food_image": "https://i.ibb.co/4SCQ9hs/choclate.webp",
+        "food_category": "Desserts",
+        "price": "$7.99",
+        "made_by": "Pastry Chef Emma Brown",
+        "food_origin": "France",
+        "description": "Satisfy your sweet tooth with this decadent chocolate indulgence cake. Layers of moist chocolate sponge, velvety ganache, and a touch of magic from Chef Emma's kitchen."
+    }
+]
