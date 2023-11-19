@@ -16,7 +16,7 @@ import SinglePage from "../Pages/SinglePage/SinglePage";
         {
           path: "/singlePage/:id",
           element: <SinglePage></SinglePage>,
-         
+          loader:({params})=> fetch(`http://localhost:5000/foods/${params.id}`)
         },
       ],
     },

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const TopFoodCard = ({food}) => {
-    const {food_name, food_image,food_category,price,id}=food;
+    const {food_name, food_image,food_category,price,_id}=food;
     return (
         <div className="rounded-xl overflow-hidden shadow-lg m-4">
       <div>
@@ -22,7 +22,7 @@ const TopFoodCard = ({food}) => {
         </span>
       </div>
       <div className="px-6">
-      <Link to={`/singlePage/${id}`}>
+      <Link to={`/singlePage/${_id}`}>
       <button
           className="bg-gray-200  text-gray-700 font-bold py-2 px-4 rounded-full">
           Details
