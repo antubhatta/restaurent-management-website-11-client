@@ -3,8 +3,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { useAuth } from "../../contexts/AuthContext";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
+  console.log(useAuth());
   const { signInUser, googleLogin, gitHubLogin, setLoading } = useAuth();
 
   const location = useLocation();
@@ -59,6 +61,9 @@ const Login = () => {
 
   return (
     <div className="hero min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                  <Helmet>
+        <title>Login - EatsHub</title>
+      </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center ">
           <h1 className="text-xl lg:text-3xl text-[#FFF] font-bold mb-4">

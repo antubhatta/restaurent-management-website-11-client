@@ -2,6 +2,7 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -9,11 +10,12 @@ import {
 } from "firebase/auth";
 import { createContext, useContext } from "react";
 import { useState } from "react";
-import auth from "../firebase/firebase.config";
+import app from "../firebase/firebase.config";
 import { useEffect } from "react";
 import axios from "axios";
 
 export const AuthContext = createContext(null);
+const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const gitHubProvider = new GithubAuthProvider();
 
@@ -56,7 +58,7 @@ const AuthProvider = ({ children }) => {
       // if user exists then issue a token
       if (currentUser) {
         axios
-          .post("http://localhost:5173/jwt", loggedUser, {
+          .post("http://localhost:5000/jwt", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {
@@ -64,7 +66,7 @@ const AuthProvider = ({ children }) => {
           });
       } else {
         axios
-          .post("http://localhost:5173/logout", loggedUser, {
+          .post("http://localhost:5000/logout", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {
