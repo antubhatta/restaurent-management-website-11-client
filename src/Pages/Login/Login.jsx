@@ -60,7 +60,7 @@ const Login = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 ">
+    <div className="hero min-h-screen bg-gradient-to-br from-teal-500 to-blue-500  ">
                   <Helmet>
         <title>Login - EatsHub</title>
       </Helmet>
