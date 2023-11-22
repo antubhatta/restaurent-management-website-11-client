@@ -7,7 +7,7 @@ const TopFoodCard = ({food}) => {
         <div className="rounded-xl overflow-hidden shadow-lg m-4">
       <div>
       <img
-        className="w-full rounded-xl px-6 h-64 object-cover"
+        className="w-full rounded-lg px-6 h-64 object-cover"
         src={food_image}
       />
       </div>

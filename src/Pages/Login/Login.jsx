@@ -60,7 +60,7 @@ const Login = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="hero min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 ">
                   <Helmet>
         <title>Login - EatsHub</title>
       </Helmet>
@@ -106,10 +106,12 @@ const Login = () => {
                 Login
               </button>
             </div>
-            <p className="text-sm text-center mt-2 divider">
+            
+          </form>
+          <p className="text-sm px-8 text-center mt-2 divider">
               Or with google and github
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between px-8">
               <button
                 onClick={handleGoogleLogin}
                 className="px-5 py-3 btn-sm text-base flex items-center gap-1 rounded-lg bg-gray-600 text-white"
@@ -131,7 +133,6 @@ const Login = () => {
                 <button className="btn btn-link">Register</button>
               </Link>
             </p>
-          </form>
           <ToastContainer />
         </div>
       </div>

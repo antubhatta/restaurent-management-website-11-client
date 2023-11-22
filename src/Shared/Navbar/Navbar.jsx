@@ -19,9 +19,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/login">Login</NavLink>
-      </li>
+      </li> */}
 
       {/* {
             user && <>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -58,7 +58,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu  menu-sm text-sm md:text-lg dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box z-50 text-white w-52"
+              className="menu  menu-sm text-sm md:text-lg dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box z-50 text-black w-52"
             >
               {navLinks}
             </ul>

@@ -148,14 +148,16 @@ const Register = () => {
               <label className="label"></label>
             </div>
             <div className="form-control mt-6">
-              <button className="py-4 rounded-md text-white bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 w-auto md:w-[400px]">
+              <button className="py-4 rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-500  w-auto md:w-[400px]">
                 Register
               </button>
             </div>
-            <p className="text-sm text-center mt-2 divider">
+            
+          </form>
+          <p className="text-sm px-8 text-center mt-2 divider">
               Or with google and github
             </p>
-            <div className="flex justify-between">
+            <div className="flex px-8 justify-between">
               <button
                 onClick={handleGoogleLogin}
                 className="px-5 py-3 btn-sm text-base flex items-center gap-1 rounded-lg bg-gray-600 text-white"
@@ -177,7 +179,6 @@ const Register = () => {
                 <button className="btn btn-link">Login</button>
               </Link>
             </p>
-          </form>
           <ToastContainer />
         </div>
       </div>
