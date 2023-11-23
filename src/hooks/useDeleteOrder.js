@@ -12,7 +12,7 @@ export function useDeleteOrder() {
   } = useMutation({
     mutationFn: async function deleteOrder(id) {
       const response = await axios.delete(
-        `http://localhost:5000/orders/${id}`,
+        `https://restaurent-management-website-11-server.vercel.app/orders/${id}`,
         {
           withCredentials: true,
         }

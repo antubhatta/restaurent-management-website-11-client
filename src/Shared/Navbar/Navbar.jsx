@@ -19,16 +19,7 @@ const Navbar = () => {
       <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      {/* <li>
-        <NavLink to="/login">Login</NavLink>
-      </li> */}
-
-      {/* {
-            user && <>
-            <li><NavLink to="/addProduct">AddProduct</NavLink></li>
-        <li><NavLink to="/myCart">MyCart</NavLink></li>
-            </>
-        } */}
+     
     </>
   );
   const handleLogOut = () => {

@@ -12,7 +12,7 @@ export function useCreateOrder() {
     error,
   } = useMutation({
     mutationFn: async function createOrder(order) {
-      const response = await axios.post("http://localhost:5000/orders", order, {
+      const response = await axios.post("https://restaurent-management-website-11-server.vercel.app/orders", order, {
         withCredentials: true,
       });
       return response.data;

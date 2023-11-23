@@ -13,7 +13,7 @@ export function useOrders() {
     queryKey: ["orders"],
     queryFn: async function getOrders() {
       const response = await axios.get(
-        `http://localhost:5000/orders?email=${user?.email}`,
+        `https://restaurent-management-website-11-server.vercel.app/orders?email=${user?.email}`,
         { withCredentials: true }
       );
       return response.data;

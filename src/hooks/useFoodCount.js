@@ -5,7 +5,7 @@ export function useFoodsCount() {
   const { data: totalFoods } = useQuery({
     queryKey: ["foods", "count"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:5000/count/foods", {
+      const res = await axios.get("https://restaurent-management-website-11-server.vercel.app/count/foods", {
         withCredentials: true,
       });
       return res.data || 0;

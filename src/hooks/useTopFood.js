@@ -10,7 +10,7 @@ export function useTopFood() {
     queryKey: ["foods"],
     queryFn: async function getTopSellingFood() {
       try {
-        const response = await axios.get("http://localhost:5000/top/foods", {
+        const response = await axios.get("https://restaurent-management-website-11-server.vercel.app/top/foods", {
           withCredentials: true,
         });
         return response.data;

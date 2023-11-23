@@ -14,7 +14,7 @@ export function useUpdateFood() {
   } = useMutation({
     mutationFn: async function updateFood(food) {
       const response = axios.patch(
-        `http://localhost:5000/foods/${food._id}`,
+        `https://restaurent-management-website-11-server.vercel.app/foods/${food._id}`,
         food,
         { withCredentials: true }
       );

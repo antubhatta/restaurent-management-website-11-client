@@ -5,7 +5,7 @@ const useFoodById = (id) => {
   const { data: food = [], isLoading } = useQuery({
     queryKey: ["food", id],
     queryFn: async function getFoodById() {
-      const response = await axios.get(`http://localhost:5000/foods/${id}`, {
+      const response = await axios.get(`https://restaurent-management-website-11-server.vercel.app/foods/${id}`, {
         withCredentials: true,
       });
 

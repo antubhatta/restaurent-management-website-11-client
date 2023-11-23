@@ -11,7 +11,7 @@ export function useDeleteFood() {
     error,
   } = useMutation({
     mutationFn: async function deleteFood(id) {
-      const response = await axios.delete(`http://localhost:5000/foods/${id}`, {
+      const response = await axios.delete(`https://restaurent-management-website-11-server.vercel.app/foods/${id}`, {
         withCredentials: true,
       });
       return response.data;

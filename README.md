@@ -16,5 +16,5 @@
 - Blog Page: Design and implement a blog page that answers specific questions related to web development and databases.
 
 ## Live Link
-[https://self-module-51.web.app/](https://self-module-51.web.app/)
+[https://restaurent-management-476f8.web.app/](https://restaurent-management-476f8.web.app/)
 

@@ -10,7 +10,7 @@ export function useFoodsByEmail(email) {
     queryKey: ["foods", "email"],
     queryFn: async function getFoodByEmail() {
       const response = await axios.get(
-        `http://localhost:5000/foods/user/${email}`,
+        `https://restaurent-management-website-11-server.vercel.app/foods/user/${email}`,
         { withCredentials: true }
       );
       return response.data;

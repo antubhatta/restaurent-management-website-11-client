@@ -19,7 +19,7 @@ const Foods = () => {
     queryKey: ["foods", currentPage, pageSize],
     queryFn: async function getFoods() {
       const response = await axios.get(
-        `http://localhost:5000/foods?page=${currentPage}&size=${pageSize}`,
+        `https://restaurent-management-website-11-server.vercel.app/foods?page=${currentPage}&size=${pageSize}`,
         { withCredentials: true }
       );
       return response.data;
