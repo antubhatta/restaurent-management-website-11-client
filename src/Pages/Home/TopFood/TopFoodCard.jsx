@@ -4,7 +4,7 @@ const TopFoodCard = ({ food }) => {
   const { food_name, food_image, food_category, price, _id } = food;
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md m-4 border">
+    <div data-aos="fade-up" className="bg-white rounded-lg overflow-hidden shadow-md m-4 border">
       <div>
         <img
           className="w-full h-64 object-cover"

@@ -4,8 +4,14 @@ import TopFood from "../TopFood/TopFood";
 import WhyChoose from "../Whychoose/WhyChoose";
 import AboutUs from "../AboutUs/AboutUs";
 import CustomerSay from "../CustomerSay/CustomerSay";
+import Aos from "aos";
 
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, [])
   return (
     <div>
       <Helmet>

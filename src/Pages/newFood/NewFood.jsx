@@ -58,7 +58,7 @@ const NewFood = () => {
         <title>New Food - EatsHub</title>
       </Helmet>
       <h1 className="text-3xl font-semibold text-center mb-8">Add New Food</h1>
-      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4">
+      <form onSubmit={handleSubmit} className="max-w-3xl mx-6 lg:mx-auto space-y-4">
         <FormInput id="name" label="Food Name" />
         <FormInput id="image" label="Food Image" />
         <FormTextarea id="description" label="Food Description" />

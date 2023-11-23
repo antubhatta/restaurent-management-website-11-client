@@ -21,72 +21,61 @@ const UserFood = () => {
     );
 
   return (
-    <div className="relative container my-16 mx-auto overflow-x-auto  ">
+    <div className="container mx-auto my-8 p-4 sm:p-8">
       <Helmet>
         <title>My Added Food - EatsHub</title>
       </Helmet>
-      <h1 className="p-5 text-2xl text-center font-semibold  text-gray-900 bg-white ">
+      <h1 className="text-3xl font-semibold text-center text-gray-900 mb-6">
         Your Added Food
       </h1>
-      <table className="w-full text-sm text-left text-gray-500 ">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-          <tr>
-            <th scope="col" className="px-6 py-3">
-              Image
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Name
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Category
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Price
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Quantity
-            </th>
-            <th scope="col" className="px-6 py-3">
-              <span className="sr-only">Edit</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {foods.map((food) => (
-            <tr key={food._id} className="bg-white border-b  ">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-              >
-                <img
-                  src={food.food_image}
-                  alt=""
-                  className="h-12 w-12 object-cover rounded-md"
-                />
-              </th>
-              <td className="px-6 py-4">{food.food_name}</td>
-              <td className="px-6 py-4">{food.food_category}</td>
-              <td className="px-6 py-4">{food.price}</td>
-              <td className="px-6 py-4">{food.quantity}</td>
-              <td className="px-6 py-4 text-right space-x-6">
-                <Link
-                  state={{ food }}
-                  to={`/food/update/${food._id}`}
-                  className="font-medium text-blue-600  hover:underline"
-                >
-                  Edit
-                </Link>
-                <button
-                  onClick={() => deleteFood(food._id)}
-                  className="font-medium text-red-600  hover:underline"
-                >
-                  <BsTrash />
-                </button>
-              </td>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse table-auto">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="py-3 text-base lg:text-xl px-4 border">Image</th>
+              <th className="py-3 text-base lg:text-xl px-4 border">Name</th>
+              <th className="py-3 text-base lg:text-xl px-4 border">Category</th>
+              <th className="py-3 text-base lg:text-xl px-4 border">Price</th>
+              <th className="py-3 text-base lg:text-xl px-4 border">Quantity</th>
+              <th className="py-3 px-4 border"></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {foods.map((food) => (
+              <tr key={food._id} className="bg-white border-b">
+                <td className="py-4 px-4 border">
+                  <div className="">
+                  <img
+                    src={food.food_image}
+                    alt=""
+                    className="h-20 w-20 text-center object-cover rounded-md"
+                  />
+                  </div>
+                </td>
+                <td className="py-4 text-base text-center lg:text-lg px-4 border">{food.food_name}</td>
+                <td className="py-4 text-base text-center lg:text-lg px-4 border">{food.food_category}</td>
+                <td className="py-4 text-base text-center lg:text-lg px-4 border">{food.price}</td>
+                <td className="py-4 text-base text-center lg:text-lg px-4 border">{food.quantity}</td>
+                <td className="py-4 text-base text-center lg:text-lg px-4 border text-right space-x-6">
+                  <Link
+                    state={{ food }}
+                    to={`/food/update/${food._id}`}
+                    className="text-blue-600 text-base text-center lg:text-lg hover:underline"
+                  >
+                    Edit
+                  </Link>
+                  <button
+                    onClick={() => deleteFood(food._id)}
+                    className="text-red-600 text-center text-base lg:text-lg hover:underline"
+                  >
+                    <BsTrash />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
